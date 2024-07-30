@@ -5,7 +5,7 @@ $dados = array(
 );
 ?>
 
-<?php include('../layouts/body.php') ?>
+<?php include('../../layouts/body.php') ?>
 
 
 <div class="col-12">
@@ -61,7 +61,7 @@ $dados = array(
     </div>
 </div>
 
-<?php include('../layouts/footer.php') ?>
+<?php include('../../layouts/footer.php') ?>
 
 <!-- Modal Cadastro de Cores -->
 <div class="modal fade" id="modal-cadastroCores" tabindex="-1" role="dialog" aria-hidden="true">

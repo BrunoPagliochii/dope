@@ -2,8 +2,10 @@
 require_once '../lib/BaseUrl.php';
 if (file_exists('../vendor/autoload.php')) {
     require '../vendor/autoload.php';
-} else {
+} else if(file_exists('../../vendor/autoload.php')){
     require '../../vendor/autoload.php';
+} else if(file_exists('../../../vendor/autoload.php')){
+    require '../../../vendor/autoload.php';
 }
 
 if (!(getenv('WEBSITE_SITE_NAME'))) {
@@ -58,7 +60,7 @@ if (isset($_ENV['JWT_NAME'])) {
                         </div>
                         <div class="form-group">
                             <div class="d-block">
-                                <label for="password" class="control-label">Password</label>
+                                <label for="password" class="control-label">Senha</label>
                                 <div class="float-right">
                                     <a href="javascript:void(0)" class="text-small">
                                         Recuperar senha?

@@ -20,21 +20,34 @@
             <li class="dropdown <?= (($dados['MenuModulo'] == 'Estoque') ? 'active' : '') ?>">
 
                 <a href="#" class="nav-link has-dropdown">
-                    <i data-feather="box"></i>
+                    <i data-feather="box"></i>  
                     <span>Estoque</span>
                 </a>
 
                 <ul class="dropdown-menu">
                     <li class="<?= (($dados['NomePagina'] == 'Cadastro de Cores') ? 'active' : '') ?>">
-                        <a class="nav-link" href="cores.php">
-                            Cadastro de Cores
+                        <a class="nav-link" href="<?= URL_BASE_HOST ?>/view/admin/estoque/cores.php">
+                            Cores
                         </a>
                     </li>
-                    <li class="">
-                        <a class="nav-link" href="index2.html">
-                            Dashboard V2
+
+                    <li class="<?= (($dados['NomePagina'] == 'Cadastro de Grupos') ? 'active' : '') ?>">
+                        <a class="nav-link" href="<?= URL_BASE_HOST ?>/view/admin/estoque/grupos.php">
+                            Grupos
                         </a>
                     </li>
+
+                    <li class="<?= (($dados['NomePagina'] == 'Cadastro de Unidades de Medida') ? 'active' : '') ?>">
+                        <a class="nav-link" href="<?= URL_BASE_HOST ?>/view/admin/estoque/unidadesMedida.php">
+                           Unidades de Medida
+                        </a>
+                    </li>
+                    <li class="<?= (($dados['NomePagina'] == 'Cadastro de Tipos de Mercadoria') ? 'active' : '') ?>">
+                        <a class="nav-link" href="<?= URL_BASE_HOST ?>/view/admin/estoque/tiposMercadoria.php">
+                            Tipos de Mercadoria
+                        </a>
+                    </li>
+
                 </ul>
             </li>
             <li class="dropdown"><a href="#" class="nav-link has-dropdown"><i data-feather="briefcase"></i><span>Widgets</span></a>

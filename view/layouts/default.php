@@ -1,7 +1,7 @@
 <?php
 $dados = array(
-    'NomeModulo' => 'Cadastro de Cores',
-    'MenuPrinciapal' => 'Estoque'
+    'NomePagina' => 'Cadastro de Grupos',
+    'MenuModulo' => 'Estoque'
 );
 ?>
 

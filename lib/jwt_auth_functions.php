@@ -2,10 +2,14 @@
 if (file_exists('../vendor/autoload.php')) {
     require_once '../vendor/autoload.php';
     require_once '../lib/BaseUrl.php';
-} else {
+} else if (file_exists('../../vendor/autoload.php')) {
     require_once '../../vendor/autoload.php';
     require_once '../../lib/BaseUrl.php';
+} else if (file_exists('../../../vendor/autoload.php')) {
+    require_once '../../../vendor/autoload.php';
+    require_once '../../../lib/BaseUrl.php';
 }
+
 
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;

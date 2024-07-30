@@ -3,10 +3,14 @@ if (file_exists('../lib/PHP_conecta.php')) {
   require_once '../lib/jwt_auth_functions.php';
   require_once '../lib/PHP_conecta.php';
   require_once '../functions/helpers.php';
-} else {
+} else if (file_exists('../../lib/PHP_conecta.php')) {
   require_once '../../lib/jwt_auth_functions.php';
   require_once '../../lib/PHP_conecta.php';
   require_once '../../functions/helpers.php';
+}if (file_exists('../../../lib/PHP_conecta.php')) {
+  require_once '../../../lib/jwt_auth_functions.php';
+  require_once '../../../lib/PHP_conecta.php';
+  require_once '../../../functions/helpers.php';
 }
 
 // --------------------------------------------------------------------
